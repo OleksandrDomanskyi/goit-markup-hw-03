@@ -30,6 +30,15 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
+}
+
 /* ОФОРМЛЕНИЕ ХЕДЕРА */
 .header {
   color: var(--title-text-color);
@@ -74,27 +83,22 @@ body {
   color: var(--accent-color);
 }
 
-/* Убираем подчёркивания и точки списка */
-.link {
-  text-decoration: none;
-}
-.list {
-  list-style: none;
-}
-
 /* ОФОРМЛЕНИЕ МЭЙНА */
 /* основной заголовок страницы */
 .hero {
   background-color: var(--footer-backgroud-color);
+  text-align: center;
 }
 
 .hero-title {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--primary-white-color);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.06em;
 }
@@ -103,29 +107,77 @@ body {
   display: none;
 }
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.section:last-child {
+  background-color: var(--secondary-background-color);
+}
+
+.section-no-padding {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Убираем подчёркивания и точки списка, задаём глобальные значения классов */
+.link {
+  text-decoration: none;
+}
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 /* Наши особенности, примеры, пиццамейкеры, портфолио */
 .features-list .title {
   text-transform: uppercase;
-}
+  margin-top: 0;
+  margin-bottom: 0;
 
-.features-list .title {
   font-size: 14px;
   line-height: 1.14;
+}
+
+.features-list p {
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.examples-title {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.examples-list {
+  margin-top: 50px;
+}
+
+.team-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 94px;
+}
+
+.team-list {
+  margin-top: 50px;
 }
 
 .team-list .title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-}
-
-.team {
-  background-color: var(--secondary-background-color);
+  margin-top: 30px;
+  margin-bottom: 0;
 }
 
 .team-list p {
   font-size: 16px;
   line-height: 1.19;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
 }
 
 .portfolio-list .title {
@@ -157,11 +209,13 @@ body {
 /* Кнопки */
 .button {
   font-family: Roboto, sans-serif;
-  text-align: center;
   cursor: pointer;
 }
 
 .button.primary {
+  margin-top: 30px;
+  display: inline-block;
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 
@@ -169,7 +223,6 @@ body {
   font-size: 16px;
   line-height: 1.87;
 
-  display: flex;
   align-items: center;
   letter-spacing: 0.06em;
 }
@@ -202,6 +255,9 @@ body {
 
 /* Логотип в футере*/
 .footer-logo {
+  padding-top: 60px;
+  display: block;
+
   color: var(--primary-white-color);
 
   font-family: Raleway, sans-serif;
@@ -215,6 +271,10 @@ body {
 }
 
 /* Контактные данные в футере */
+.address-nav {
+  margin-top: 10px;
+}
+
 .link.first {
   color: var(--primary-white-color);
 }
@@ -228,4 +288,9 @@ body {
 .link.second:hover,
 .link.second:focus {
   color: var(--accent-color);
+}
+
+.address-nav a[href='tel:+380961111111'] {
+  padding-bottom: 60px;
+  display: block;
 }
