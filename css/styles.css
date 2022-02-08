@@ -180,13 +180,22 @@ body {
   padding-bottom: 30px;
 }
 
+.portfolio-list {
+  margin-top: 34px;
+}
+
 .portfolio-list .title {
+  margin-top: 20px;
+  margin-bottom: 0;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 
 .portfolio-description {
+  margin-top: 4px;
+  margin-bottom: 0;
+  padding-bottom: 20px;
   color: var(--primary-text-color);
 
   font-size: 16px;
