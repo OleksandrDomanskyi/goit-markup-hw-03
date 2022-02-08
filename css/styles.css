@@ -1,0 +1,231 @@
+/* цвет основного текста #757575 */
+/* цвет заголовков #212121 */
+/* белый #FFFFFF */
+/* акцент #2196F3 */
+/* альтернативный цвет фона #F5F4FA */
+/* цвет фона хедера #FFFFFF */
+/* цвет фона футера #2F303A */
+/* черный #000000 */
+/* контакты в футере rgba(255, 255, 255, 0.6) */
+
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --secondary-background-color: #f5f4fa;
+  --footer-backgroud-color: #2f303a;
+  --primary-black-color: #000000;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Задаём основной цвет текста, фона и шрифт на странице */
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-white-color);
+
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* ОФОРМЛЕНИЕ ХЕДЕРА */
+.header {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+/* Логотип в хедере */
+.header-logo {
+  color: var(--primary-black-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+.header-logo > span {
+  color: var(--accent-color);
+}
+
+/* Меню навигации и контактов */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.contact-nav .link {
+  color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+/* Убираем подчёркивания и точки списка */
+.link {
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+
+/* ОФОРМЛЕНИЕ МЭЙНА */
+/* основной заголовок страницы */
+.hero {
+  background-color: var(--footer-backgroud-color);
+}
+
+.hero-title {
+  color: var(--primary-white-color);
+
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Наши особенности, примеры, пиццамейкеры, портфолио */
+.features-list .title {
+  text-transform: uppercase;
+}
+
+.features-list .title {
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.team-list .title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team {
+  background-color: var(--secondary-background-color);
+}
+
+.team-list p {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.portfolio-list .title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-description {
+  color: var(--primary-text-color);
+
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/* Заголовки */
+.title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+.examples-title,
+.team-title {
+  text-align: center;
+}
+
+/* Кнопки */
+.button {
+  font-family: Roboto, sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+}
+
+.button.secondary {
+  color: var(--title-text-color);
+  background-color: var(--secondary-background-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+
+  letter-spacing: 0.03em;
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+/* ОФОРМЛЕНИЕ ФУТЕРА */
+.footer {
+  background-color: var(--footer-backgroud-color);
+}
+
+.address {
+  font-style: normal;
+}
+
+/* Логотип в футере*/
+.footer-logo {
+  color: var(--primary-white-color);
+
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+.footer-logo > span {
+  color: var(--accent-color);
+}
+
+/* Контактные данные в футере */
+.link.first {
+  color: var(--primary-white-color);
+}
+
+.link.second {
+  color: var(--footer-contacts-color);
+}
+
+.link.first:hover,
+.link.first:focus,
+.link.second:hover,
+.link.second:focus {
+  color: var(--accent-color);
+}
