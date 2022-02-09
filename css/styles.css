@@ -175,12 +175,12 @@ body {
   padding-bottom: 94px;
 }
 .section.last-section {
+  padding-top: 0;
   background-color: var(--secondary-background-color);
 }
 
 .section-no-padding {
   padding-top: 0;
-  padding-bottom: 0;
 }
 
 /* Наши особенности, примеры, пиццамейкеры, портфолио */
@@ -379,6 +379,8 @@ body {
 
 /* ОФОРМЛЕНИЕ ФУТЕРА */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--footer-backgroud-color);
 }
 
@@ -388,7 +390,6 @@ body {
 
 /* Логотип в футере*/
 .footer-logo {
-  padding-top: 60px;
   display: block;
 
   color: var(--primary-white-color);
@@ -405,7 +406,7 @@ body {
 
 /* Контактные данные в футере */
 .address-nav {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .link.first {
@@ -423,7 +424,7 @@ body {
   color: var(--accent-color);
 }
 
-.address-nav a[href='tel:+380961111111'] {
-  padding-bottom: 60px;
-  display: block;
+.address-nav .item + .item {
+  margin-top: 9px;
+  margin-bottom: 0;
 }
