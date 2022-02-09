@@ -36,7 +36,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 /* Убираем подчёркивания и точки списка, задаём глобальные значения классов */
@@ -159,7 +159,7 @@ body {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.section:last-child {
+.section.last-section {
   background-color: var(--secondary-background-color);
 }
 
@@ -252,8 +252,27 @@ body {
   padding-bottom: 30px;
 }
 
+.buttons-list {
+  display: flex;
+  justify-content: center;
+}
+
+.buttons-list .item + .item {
+  margin-left: 8px;
+}
+
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 34px;
+}
+
+.portfolio-list .item {
+  margin-right: 30px;
+}
+
+.portfolio-list .item:nth-child(3n + 3) {
+  margin-right: 0px;
 }
 
 .portfolio-list .title {
@@ -299,6 +318,7 @@ body {
 
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   font-weight: 700;
   font-size: 16px;
@@ -309,13 +329,21 @@ body {
 }
 
 .button.secondary {
+  display: inline-block;
+  border-radius: 4px;
+  padding-top: 6px;
+  padding-right: 22px;
+  padding-bottom: 6px;
+  padding-left: 22px;
+  text-align: center;
+
   color: var(--title-text-color);
   background-color: var(--secondary-background-color);
+  border: 1px solid transparent;
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-
   letter-spacing: 0.03em;
 }
 
@@ -323,6 +351,8 @@ body {
 .button.secondary:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* ОФОРМЛЕНИЕ ФУТЕРА */
