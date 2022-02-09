@@ -49,6 +49,10 @@ body {
   list-style: none;
 }
 
+img {
+  display: block;
+}
+
 /* ОФОРМЛЕНИЕ ХЕДЕРА */
 .header {
   color: var(--title-text-color);
@@ -57,6 +61,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  border-bottom: 1px solid #ececec;
 }
 
 /* Логотип в хедере */
@@ -259,20 +265,22 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  margin-top: 30px;
-  margin-bottom: 0;
+  /* margin-top: 30px;
+  margin-bottom: 0; */
+  margin: 0;
 }
 
 .team-list p {
   font-size: 16px;
   line-height: 1.19;
   margin-top: 10px;
-  margin-bottom: 0px;
-  padding-bottom: 30px;
+  margin-bottom: 0;
 }
 
 .team-list-container {
   text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .buttons-list {
@@ -287,19 +295,24 @@ body {
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 34px;
+  margin-top: 50px;
 }
 
 .portfolio-list .item {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .portfolio-list .item:nth-child(3n + 3) {
-  margin-right: 0px;
+  margin-right: 0;
+}
+
+.portfolio-list .item:nth-child(n + 7) {
+  margin-bottom: 0;
 }
 
 .portfolio-list .title {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 0;
   font-size: 18px;
   line-height: 2;
@@ -317,7 +330,15 @@ body {
 }
 
 .portfolio-list-container {
-  margin: 20px 24px;
+  margin: 0;
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+}
+
+.portfolio-list .link {
+  width: 370px;
+  height: 294px;
 }
 
 /* Заголовки */
